@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Luxury Tree Final v2</title>
     <style>
+        .my-signature {
+  position: fixed;    /* Cố định vị trí */
+  bottom: 15px;       /* Cách mép dưới 15px */
+  right: 20px;        /* Cách mép phải 20px */
+  color: rgba(255, 255, 255, 0.6); /* Màu trắng mờ (giống trong hình) */
+  font-size: 14px;    /* Cỡ chữ nhỏ vừa phải */
+  font-family: sans-serif; /* Phông chữ đơn giản */
+  z-index: 9999;      /* Đảm bảo nó luôn nổi lên trên các thành phần khác */
+  pointer-events: none; /* Không làm ảnh hưởng khi bấm chuột vào khu vực đó */
+}
         body { margin: 0; overflow: hidden; background-color: #000000; font-family: 'Times New Roman', serif; }
         #canvas-container { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
          
@@ -634,5 +644,9 @@
  
         init();
     </script>
+    <div class="my-signature">
+  © by baosang
+</div>
 </body>
+
 </html>
